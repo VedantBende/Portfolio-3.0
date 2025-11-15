@@ -77,7 +77,8 @@
   width: 100%;
   font-size: 150px;
   white-space: nowrap;
-  font-family: gilroy, sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
   z-index: 2;
   overflow: visible;
 }
