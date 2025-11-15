@@ -10,7 +10,7 @@
     <!-- Content -->
     <div id="loop">
       <h1 v-for="n in 3" :key="n">
-        <span>VEDANT</span> BENDE <span>AI & WEB</span> DEVELOPER.
+        <span>VE<span class="special-letter">D</span>ANT</span> BENDE <span>AI & WEB</span> DEVELOPER.
       </h1>
     </div>
     
@@ -67,6 +67,12 @@
   z-index: 1;
 }
 
+.special-letter {
+  font-family: "Inter", sans-serif; /* example font */
+  font-weight: 800;                      /* optional */
+  -webkit-text-stroke: 1.5px #000;      /* optional outline */
+}
+
 /* Content */
 #loop {
   display: flex;
@@ -77,7 +83,7 @@
   width: 100%;
   font-size: 150px;
   white-space: nowrap;
-  font-family: "Manrope", sans-serif;
+  font-family: "Inter Tight", sans-serif;
   font-weight: 800;
   z-index: 2;
   overflow: visible;
