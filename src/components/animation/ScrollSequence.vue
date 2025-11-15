@@ -126,7 +126,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* Base styles - Desktop (1281px+) */
+/* Base styles - Desktop only */
 .scroll-sequence-container {
   position: relative;
   width: 100%;
@@ -152,57 +152,5 @@ onUnmounted(() => {
   pointer-events: none;
   z-index: 10;
   padding: 0;
-}
-
-/* Small Laptops (1025px - 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .scroll-canvas {
-    image-rendering: auto;
-  }
-  
-  .overlay-content {
-    padding: 0 2%;
-  }
-}
-
-/* Tablets (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .scroll-canvas {
-    height: 100vh;
-    object-fit: contain;
-    image-rendering: auto;
-  }
-  
-  .overlay-content {
-    padding: 0 3%;
-  }
-}
-
-/* Large Phones (480px - 767px) */
-@media (min-width: 480px) and (max-width: 767px) {
-  .scroll-canvas {
-    height: 100vh;
-    object-fit: contain;
-    image-rendering: auto;
-  }
-  
-  .overlay-content {
-    padding: 0 4%;
-    top: 0;
-  }
-}
-
-/* Small Phones (320px - 479px) */
-@media (min-width: 320px) and (max-width: 479px) {
-  .scroll-canvas {
-    height: 100vh;
-    object-fit: contain;
-    image-rendering: auto;
-  }
-  
-  .overlay-content {
-    padding: 0 5%;
-    top: 0;
-  }
 }
 </style>

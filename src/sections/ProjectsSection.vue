@@ -58,7 +58,7 @@ const projects = ref([
     title: 'Weather Dashboard',
     description: 'A modern, responsive weather dashboard built with Vue.js 3 and Vite. Features real-time weather data, 5-day forecasts, interactive charts, and location-based weather updates with a clean, minimalist UI.',
     skills: ['Vue.js 3', 'Vite', 'Weather API', 'Chart.js', 'Responsive Design'],
-    link: 'https://weather-dashboard-21.vercel.app/dashboard',
+    link: 'https://weather-dashboard-21.vercel.app/',
     link1: 'https://github.com/VedantBende/weather-dashboard'
   },
   {
@@ -85,7 +85,8 @@ const projects = ref([
     title: 'Portfolio Website 3.0 (Current)',
     description: 'This portfolio! A Vue.js 3 based modern portfolio with advanced animations, smooth scrolling, and cinematic frame transitions. Features GSAP animations and Locomotive Scroll.',
     skills: ['Vue.js', 'GSAP', 'Locomotive Scroll', 'Vuetify', 'Modern Design'],
-    link: ''
+    link: 'https://vedant-bende-portfolio-3.vercel.app/',
+    link1: 'https://github.com/VedantBende/Portfolio-3.0'
   }
 ])
 </script>

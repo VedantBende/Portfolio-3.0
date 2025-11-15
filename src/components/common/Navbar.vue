@@ -1,6 +1,11 @@
 <template>
   <nav id="nav">
-    <h3 @click="scrollToSection('page')">VEDANT BENDE</h3>
+    <div class="nav-brand" @click="scrollToSection('page')">
+    <div class="logo-circle">
+      <img src="/Logo.svg" class="logo" alt="VB Logo" />
+    </div>
+    <h3>VEDANT BENDE</h3>
+  </div>
     
     <div class="nav-links hidden md:flex">
       <span 
@@ -100,6 +105,33 @@ const scrollToSection = (sectionId) => {
 </script>
 
 <style scoped>
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+}
+
+/* Circular BORDER */
+.logo-circle {
+  height: 48px;
+  width: 48px;
+  border-radius: 35%;
+  border: 2px solid white;     /* visible white border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+/* SVG Logo Styling */
+.logo {
+  height: 35px;                /* shrink slightly to expose border */
+  width: auto;
+  display: block;
+}
+
+
 /* Base styles - Desktop (1281px+) */
 #nav {
   display: flex;
@@ -267,118 +299,6 @@ const scrollToSection = (sectionId) => {
   
   .canvas-toggle {
     padding: 9px 13px;
-  }
-}
-
-/* Tablets (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  #nav {
-    height: 60px;
-    padding: 0 25px;
-  }
-  
-  #nav > h3 {
-    font-size: 18px;
-  }
-  
-  .nav-links {
-    gap: 1.5rem;
-  }
-  
-  .nav-links span {
-    font-size: 12px;
-  }
-  
-  .canvas-toggle {
-    padding: 8px 12px;
-  }
-  
-  .canvas-toggle :deep(.v-icon) {
-    font-size: 18px !important;
-  }
-}
-
-/* Large Phones (480px - 767px) */
-@media (min-width: 480px) and (max-width: 767px) {
-  #nav {
-    height: 60px;
-    padding: 0 20px;
-  }
-  
-  #nav > h3 {
-    font-size: 16px;
-  }
-  
-  .canvas-toggle {
-    padding: 8px 10px;
-  }
-  
-  .canvas-toggle :deep(.v-icon) {
-    font-size: 18px !important;
-  }
-  
-  .mobile-menu {
-    width: 260px !important;
-  }
-  
-  .mobile-header {
-    padding: 1.25rem 1rem;
-  }
-  
-  .mobile-header h3 {
-    font-size: 16px;
-  }
-  
-  .mobile-list :deep(.v-list-item-title) {
-    font-size: 13px;
-  }
-}
-
-/* Small Phones (320px - 479px) */
-@media (min-width: 320px) and (max-width: 479px) {
-  #nav {
-    height: 55px;
-    padding: 0 15px;
-  }
-  
-  #nav > h3 {
-    font-size: 14px;
-  }
-  
-  .nav-actions {
-    gap: 0.5rem;
-  }
-  
-  .canvas-toggle {
-    padding: 7px 9px;
-  }
-  
-  .canvas-toggle :deep(.v-icon) {
-    font-size: 16px !important;
-  }
-  
-  .menu-btn :deep(.v-icon) {
-    font-size: 22px !important;
-  }
-  
-  .mobile-menu {
-    width: 240px !important;
-  }
-  
-  .mobile-header {
-    padding: 1rem 0.85rem;
-  }
-  
-  .mobile-header h3 {
-    font-size: 14px;
-  }
-  
-  .menu-item {
-    padding: 0.85rem 1.25rem !important;
-  }
-  
-  .mobile-list :deep(.v-list-item-title) {
-    font-size: 12px;
   }
 }
 </style>
