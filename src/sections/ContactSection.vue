@@ -25,7 +25,7 @@
         
         <div class="contact-item">
           <h3>RESUME</h3>
-          <a href="/public/resume/Vedant_Bende_Resume.pdf" download>DOWNLOAD RESUME →</a>
+          <a href="/resume/Vedant_Bende_Resume.pdf" download>DOWNLOAD RESUME →</a>
         </div>
       </div>
     </div>
